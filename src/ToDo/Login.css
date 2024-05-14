@@ -1,0 +1,67 @@
+/* Aligns with the global styles defined in your App.css */
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login__container {
+  padding: 20px;
+  background-color: #333; /* Dark theme matching the app's aesthetic */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login__textBox {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #1e1e1e; /* Slightly lighter dark shade for contrast */
+  border: none;
+  border-radius: 5px;
+  color: #e0e0e0; /* Light text for readability */
+}
+
+.login__btn {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+/* Primary action button, matching the .btn style from App.css */
+.login__btn:not(.login__google) {
+  background-color: #1976d2; /* Blue, similar to your app's action buttons */
+  color: #e0e0e0;
+}
+
+.login__btn:not(.login__google):hover {
+  opacity: 0.9;
+}
+
+/* Google sign-in button, styled distinctly for clarity */
+.login__google {
+  background-color: #db4437; /* Google's brand color for sign-in buttons */
+  color: #e0e0e0;
+}
+
+.login__google:hover {
+  background-color: #b33629;
+}
+
+/* Additional styling for links */
+.login__link {
+  color: #4caf50; /* Accent color for interactive elements */
+  text-decoration: none;
+}
+
+.login__link:hover {
+  text-decoration: underline;
+}
